@@ -1,8 +1,8 @@
 "use client";
 
+import profilePic from "@/public/assets/profile02.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "../../public/assets/profile02.png";
 
 export default function Hero() {
   return (
