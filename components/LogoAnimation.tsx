@@ -8,6 +8,7 @@ import NextJS from "@/public/nextjs.svg";
 import React from "@/public/react.svg";
 import TailwindCSS from "@/public/tailwind.svg";
 import TypeScript from "@/public/typescript.svg";
+import Vercel from "@/public/vercel.svg";
 import VsCode from "@/public/vscode.svg";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -22,6 +23,7 @@ const images = [
   { src: React, alt: "React" },
   { src: TailwindCSS, alt: "TailwindCSS" },
   { src: VsCode, alt: "VsCode" },
+  { src: Vercel, alt: "Vercel" },
   { src: CSS, alt: "CSS" },
   { src: Fiverr, alt: "Fiverr" },
   { src: HTML, alt: "HTML" },
@@ -31,6 +33,7 @@ const images = [
   { src: React, alt: "React" },
   { src: TailwindCSS, alt: "TailwindCSS" },
   { src: VsCode, alt: "VsCode" },
+  { src: Vercel, alt: "Vercel" },
   { src: CSS, alt: "CSS" },
   { src: Fiverr, alt: "Fiverr" },
   { src: HTML, alt: "HTML" },
@@ -40,6 +43,7 @@ const images = [
   { src: React, alt: "React" },
   { src: TailwindCSS, alt: "TailwindCSS" },
   { src: VsCode, alt: "VsCode" },
+  { src: Vercel, alt: "Vercel" },
 ];
 
 export default function LogoAnimation() {
@@ -51,7 +55,7 @@ export default function LogoAnimation() {
             className='flex gap-14 flex-none pr-14'
             animate={{ translateX: "-50%" }}
             transition={{
-              duration: 35,
+              duration: 15,
               repeat: Infinity,
               ease: "linear",
               repeatType: "loop",
