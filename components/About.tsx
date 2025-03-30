@@ -14,7 +14,7 @@ import { Progress } from "./ui/progress";
 
 export default function About() {
   return (
-    <section id='about' className='text-white p-8'>
+    <section id='about' className='text-white p-8 py-24'>
       <h2 className='text-6xl font-bold mb-8'>
         About <span className='text-purple-300'>Me</span>
       </h2>
