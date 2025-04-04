@@ -1,12 +1,14 @@
 "use client";
 
-import profilePic from "@/public/assets/profile02.png";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import HeroImage from "./HeroImage";
 
 export default function Hero() {
   return (
-    <div className='relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,#000,#340f41_35%,#8a3da4_55%,#8993ed_85%)]'>
+    <div
+      id='home'
+      className='relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,#000,#340f41_35%,#8a3da4_55%,#8993ed_85%)]'
+    >
       <div className='absolute bg-black w-[1800px] h-[1200px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#9e4ac5)] top-[250px] border-[1px] border-[#bd8cde]/30' />
       <div className='container relative mx-auto px-4 pt-12 pd-24'>
         <div className='flex flex-col items-center justify-center text-center blur-z-10'>
@@ -17,11 +19,7 @@ export default function Hero() {
             className='relative mb-8 mt-12'
           >
             <div className='absolute inset-0 bg-gradient-to-b from-purple-500/40 to-transparent rounded-full blur-3xl'></div>
-            <Image
-              src={profilePic}
-              alt='profile pic'
-              className='w-[100px] relative z-10'
-            />
+            <HeroImage />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +52,6 @@ export default function Hero() {
         </div>
         <motion.div></motion.div>
       </div>
-      Hero
     </div>
   );
 }
