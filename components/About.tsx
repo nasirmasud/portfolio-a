@@ -1,7 +1,7 @@
 "use client";
 
-import portfolio01 from "@/public/assets/Project01.png";
-import portfolio02 from "@/public/assets/Project02.png";
+import expertise from "@/public/assets/Expertise.png";
+import goals from "@/public/assets/Goals.png";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import React from "react";
@@ -117,8 +117,8 @@ export default function About() {
             transition={{ delay: 1 + 0 * 0.1, duration: 0.4 }}
           >
             <Image
-              src={portfolio01}
-              alt='Project 1'
+              src={expertise}
+              alt='Expertise'
               fill
               className='rounded-lg'
             />
@@ -373,8 +373,8 @@ export default function About() {
             className='h-[200px] overflow-hidden p-4 border border-white/20 relative'
           >
             <Image
-              src={portfolio02}
-              alt='Project 2'
+              src={goals}
+              alt='Goals'
               fill
               className='object-cover rounded-lg'
             />
