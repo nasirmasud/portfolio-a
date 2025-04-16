@@ -6,39 +6,27 @@ import React from "react";
 const services = [
   {
     id: "01",
-    title: "Web Design",
+    title: "Custom Web Application Development",
     description:
-      "We design beautiful websites that are modern and responsive. We design beautiful websites that are modern and responsive. We design beautiful websites that are modern and responsive.",
+      "Build high-performance, scalable web applications using React & Next.js. Whether you need a SaaS platform, admin dashboard, or business tool, I develop responsive and dynamic solutions tailored to your needs",
   },
   {
     id: "02",
-    title: "SEO Optimization",
+    title: "SEO-Optimized Websites with Next.js",
     description:
-      "We help you rank higher on search engines. We design beautiful websites that are modern and responsive.",
+      "Leverage Next.js server-side rendering (SSR) and static site generation (SSG) for blazing-fast, search-engine-friendly websites. Perfect for blogs, portfolios, and business sites that rank higher on Google.",
   },
   {
     id: "03",
-    title: "UX/UI Design",
+    title: "Progressive Web Apps (PWAs)",
     description:
-      "Creating intuitive user interfaces that are easy to use. We design beautiful websites that are modern and responsive.",
+      "Transform your website into an installable PWA with offline capabilities, push notifications, and smooth performance. Ideal for e-commerce, news portals, and user-centric platforms.",
   },
   {
     id: "04",
-    title: "Digital Marketing",
+    title: "Frontend UI/UX Development",
     description:
-      "Strategizing and executing marketing campaigns.We design beautiful websites that are modern and responsive.",
-  },
-  {
-    id: "05",
-    title: "Content Creation",
-    description:
-      "Crafting engaging content for your audience and brand. We design beautiful websites that are modern and responsive.",
-  },
-  {
-    id: "06",
-    title: "Social Media Management",
-    description:
-      "Managing your social media accounts and growing your audience. We design beautiful websites that are modern and responsive.",
+      "Craft pixel-perfect, interactive user interfaces with React.js, Tailwind CSS, and Framer Motion. I focus on clean design, smooth animations, and intuitive navigation for an engaging user experience.",
   },
 ];
 
