@@ -53,82 +53,87 @@ export default function Portfolio() {
   return (
     <motion.section
       id='portfolio'
-      className='py-32 text-white mx-auto px-8'
+      className='py-32 text-white w-full px-8'
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12'>
-        <div>
-          <motion.h2
-            className='font-bold text-6xl mb-10'
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Selected <span className='text-purple-500'>Projects</span>
-          </motion.h2>
-          {projects.map((project, index) => (
-            <motion.div
-              className='cursor-pointer mb-8 group'
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ delay: 0.4 + index * 0.1, duration: 0.6 }}
-              onClick={() => setSelectedProject(project)}
-            >
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ delay: 1 + index * 0.1, duration: 0.4 }}
-                className='text-purple-400 text-lg mb-2'
-              >
-                {project.year}
-              </motion.p>
-              <motion.h3
-                initial={{ scale: 0.5 }}
-                animate={isInView ? { scale: 1 } : { scale: 0.5 }}
-                transition={{
-                  delay: 0.6 + index * 0.1,
-                  duration: 0.4,
-                  type: "spring",
-                }}
-                className={`font-semibold text-2xl group-hover: text-gray-400 transition-colors${
-                  selectedProject.id === project.id ? "text-purple-200" : ""
-                } duration-300`}
-              >
-                {project.title}
-              </motion.h3>
-              {selectedProject.id === project.id && (
-                <div className='border-b-2 border-purple-200 my-4'></div>
-              )}
-              {selectedProject.id === project.id && (
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                  transition={{ delay: 0.5 * 0.1, duration: 0.4 }}
-                  className='text-gray-400 transition-all duration-500 ease-in-out'
-                >
-                  {project.description}
-                </motion.p>
-              )}
-            </motion.div>
-          ))}
-        </div>
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
+      <div className='w-full'>
+        <motion.h2
+          className='font-bold text-6xl mb-10'
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Image
-            src={selectedProject.imageSrc}
-            alt={selectedProject.title}
-            width={800}
-            height={450}
-            className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out mt-36'
-          />
-        </motion.div>
+          Selected <span className='text-purple-500'>Projects</span>
+        </motion.h2>
+        {projects.map((project, index) => (
+          <motion.div
+            className='cursor-pointer mb-12 group w-full'
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ delay: 0.4 + index * 0.1, duration: 0.6 }}
+            onClick={() => setSelectedProject(project)}
+          >
+            <div className='flex flex-col lg:flex-row items-start gap-12 w-full'>
+              <div className='w-full lg:w-1/2'>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ delay: 1 + index * 0.1, duration: 0.4 }}
+                  className='text-purple-400 text-lg mb-2'
+                >
+                  {project.year}
+                </motion.p>
+                <motion.h3
+                  initial={{ scale: 0.5 }}
+                  animate={isInView ? { scale: 1 } : { scale: 0.5 }}
+                  transition={{
+                    delay: 0.6 + index * 0.1,
+                    duration: 0.4,
+                    type: "spring",
+                  }}
+                  className={`font-semibold text-2xl group-hover: text-gray-400 transition-colors${
+                    selectedProject.id === project.id ? "text-purple-200" : ""
+                  } duration-300`}
+                >
+                  {project.title}
+                </motion.h3>
+                {selectedProject.id === project.id && (
+                  <div className='border-b-2 border-purple-200 my-4'></div>
+                )}
+                {selectedProject.id === project.id && (
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                    transition={{ delay: 0.5 * 0.1, duration: 0.4 }}
+                    className='text-gray-400 transition-all duration-500 ease-in-out'
+                  >
+                    {project.description}
+                  </motion.p>
+                )}
+              </div>
+              {selectedProject.id === project.id && (
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className='w-full lg:w-1/2'
+                >
+                  <Image
+                    src={project.imageSrc}
+                    alt={project.title}
+                    width={800}
+                    height={450}
+                    className='rounded-xl shadow-lg transition-opacity duration-500 ease-in-out w-full h-auto'
+                  />
+                </motion.div>
+              )}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </motion.section>
   );
