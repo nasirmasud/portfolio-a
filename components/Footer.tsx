@@ -1,3 +1,5 @@
+"use client";
+
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
@@ -22,6 +24,25 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const scrollToTop = () => {
+    const duration = 1500; // Duration in milliseconds
+    const start = window.scrollY;
+    const startTime = performance.now();
+
+    function scroll(currentTime: number) {
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      window.scrollTo(0, start * (1 - progress));
+
+      if (progress < 1) {
+        requestAnimationFrame(scroll);
+      }
+    }
+
+    requestAnimationFrame(scroll);
+  };
+
   return (
     <footer className='relative py-4 max-w-full mx-auto px-4'>
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
@@ -43,20 +64,28 @@ export default function Footer() {
 
       <div className='flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col relative z-10'>
         <p className='text-gray-200'>&copy; 2025. All rights reserved.</p>
-        <ul className='flex gap-5 flex-wrap'>
-          {socialLinks.map(({ href, Icon, label }) => (
-            <a
-              key={label}
-              href={href}
-              target='_blank'
-              rel='noopener noreferrer'
-              aria-label={label}
-              className='text-gray-200 flex items-center justify-center w-10 h-10 rounded-full hover:text-gray-400 transition-colors hover:scale-110'
-            >
-              <Icon size={30} />
-            </a>
-          ))}
-        </ul>
+        <button
+          onClick={scrollToTop}
+          className='text-gray-200 hover:text-gray-400 transition-colors cursor-pointer'
+        >
+          Back to Top
+        </button>
+        <div className='flex items-center gap-10'>
+          <ul className='flex gap-5 flex-wrap'>
+            {socialLinks.map(({ href, Icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label={label}
+                className='text-gray-200 flex items-center justify-center w-10 h-10 rounded-full hover:text-gray-400 transition-colors hover:scale-110'
+              >
+                <Icon size={30} />
+              </a>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );
