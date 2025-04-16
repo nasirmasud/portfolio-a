@@ -6,19 +6,19 @@ import React from "react";
 const metrics = [
   {
     id: 1,
-    value: "5+",
+    value: "2+",
     label: "Years of Experience",
     description: "Dedicated to honing my skill in full-stack development",
   },
   {
     id: 2,
-    value: "50+",
+    value: "10+",
     label: "Projects Completed",
     description: "From small application to complex web application",
   },
   {
     id: 3,
-    value: "10+",
+    value: "5+",
     label: "Technology Mastered",
     description: "Proficient in multiple programming languages and frameworks",
   },
@@ -30,7 +30,7 @@ const metrics = [
   },
   {
     id: 5,
-    value: "1000+",
+    value: "500+",
     label: "Commits on GitHub",
     description: "Active contributor to open-source projects",
   },
