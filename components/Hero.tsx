@@ -4,6 +4,29 @@ import { motion } from "framer-motion";
 import HeroImage from "./HeroImage";
 
 export default function Hero() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const duration = 1500;
+      const start = window.scrollY;
+      const end = element.offsetTop;
+      const startTime = performance.now();
+
+      function scroll(currentTime: number) {
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        window.scrollTo(0, start + (end - start) * progress);
+
+        if (progress < 1) {
+          requestAnimationFrame(scroll);
+        }
+      }
+
+      requestAnimationFrame(scroll);
+    }
+  };
+
   return (
     <div
       id='home'
@@ -37,13 +60,15 @@ export default function Hero() {
             <div className='flex justify-center gap-4'>
               <motion.button
                 whileHover={{ scale: 1.3 }}
-                className='px-6 py-3 bg-gradient-to-r from-purple-700/80 to-purple-500/40 border-white rounded-full font-medium hover:bg-purple-700 transition-colors'
+                onClick={() => scrollToSection("contact")}
+                className='px-6 py-3 bg-gradient-to-r from-purple-700/80 to-purple-500/40 border-white rounded-full font-medium hover:bg-purple-700 transition-colors cursor-pointer'
               >
                 Contact Me
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.3 }}
-                className='px-6 py-3 bg-gradient-to-r from-purple-500/40 to-purple-700/80 border-white rounded-full font-medium hover:bg-purple-700 transition-colors'
+                onClick={() => scrollToSection("portfolio")}
+                className='px-6 py-3 bg-gradient-to-r from-purple-500/40 to-purple-700/80 border-white rounded-full font-medium hover:bg-purple-700 transition-colors cursor-pointer'
               >
                 View my Works
               </motion.button>
