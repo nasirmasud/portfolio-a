@@ -10,8 +10,8 @@ const navLinks = [
   { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
   { title: "Portfolio", path: "#portfolio" },
-  { title: "Contact", path: "#contact" },
   { title: "Services", path: "#services" },
+  { title: "Contact", path: "#contact" },
 ];
 
 export default function NavBar() {
