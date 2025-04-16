@@ -193,7 +193,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className='grid-cols-3 md:grid-cols-2 gap-8 rounded-lg flex mt-8'>
+      <div className='grid md:grid-cols-2 gap-8'>
         <div className='border border-white/20 rounded-lg p-6'>
           <motion.h3
             className='font-bold text-2xl mb-2'
