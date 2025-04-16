@@ -12,33 +12,33 @@ const projects = [
   {
     id: 1,
     year: "2021",
-    title: "Doodle - customer support chatBot",
+    title: "Its Nasir - A personal portfolio",
     description:
-      "We built an advanced customer support chatbot for Doodle, that helps 87% customers with their queries",
+      "A modern personal portfolio built with Next.js 15 and React 19, featuring a sleek UI powered by Tailwind CSS and ShadCN components. The project leverages Framer Motion for smooth animations and transitions, with responsive design at its core. It includes intersection observers for scroll-based animations and uses TypeScript for type safety. The portfolio showcases professional work through an optimized, component-based architecture with built-in performance features like font optimization and modern development practices.",
     imageSrc: Project1,
   },
   {
     id: 2,
     year: "2023",
-    title: "Dash - AI calling system",
+    title: "NextProperties - Find the Perfect Property for You",
     description:
-      "We developed Dash an AI powered calling system that helps you to make calls without any hassle",
+      "Next-Properties is a real estate platform built with Next.js, offering property listings, search functionality, and user management. The app features interactive property cards, detailed property views, and a responsive design. Users can browse listings, filter by various criteria (price, location, type), and save favorites. The backend integrates with a database MongoDB for property data and user management. The UI is built with modern React components and styled using Tailwind CSS.",
     imageSrc: Project2,
   },
   {
     id: 3,
     year: "2024",
-    title: "Atomic - AI driven outreach",
+    title: "GameHub - An internet gaming info database",
     description:
-      "Atomic is an AI driven outreach tool that helps you to reach out to your customers without any hassle",
+      "GameHub is a modern web application built with React, TypeScript, and Vite, featuring a sleek UI powered by Chakra UI. It's designed to be a gaming platform/hub that leverages modern web technologies for optimal performance. The project uses a robust tech stack including React 18, TypeScript for type safety, Axios for API calls, and Framer Motion for animations. The development environment is configured with ESLint for code quality and HMR (Hot Module Replacement) for a smooth development experience.",
     imageSrc: Project3,
   },
   {
     id: 4,
     year: "2025",
-    title: "Market - AI driven marketing",
+    title: "Portfolio website - Using Headless CMS Sanity",
     description:
-      "Market is an AI driven marketing tool that helps you to reach out to your customers without any hassle",
+      "A dynamic portfolio website built with Next.js 15 and React 19, featuring a custom MongoDB backend for content management. The UI combines Material-UI components with TailwindCSS for styling, enhanced by Framer Motion animations and React Slick carousels. Features include secure authentication, smooth scrolling, and a responsive design. The project uses a custom API architecture with Mongoose for data handling, making it fully customizable and maintainable. Perfect for developers seeking a modern, performant way to showcase their work with complete control over their content.",
     imageSrc: Project4,
   },
 ];
