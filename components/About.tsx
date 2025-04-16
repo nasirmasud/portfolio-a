@@ -39,7 +39,7 @@ export default function About() {
         About <span className='text-purple-500'>Me</span>
       </motion.h2>
       <div className='grid md:grid-cols-3 gap-8'>
-        <div className='border border-white/20 rounded-lg p-6'>
+        <div className=' rounded-lg p-6'>
           <motion.h3
             className='font-bold text-2xl mb-2'
             initial={{ scale: 0.5 }}
@@ -86,7 +86,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        <div className='border border-white/20 rounded-lg p-6'>
+        <div className=' rounded-lg p-6'>
           <motion.h3
             className='font-bold text-2xl mb-2'
             initial={{ scale: 0.5 }}
@@ -119,13 +119,13 @@ export default function About() {
             <Image
               src={expertise}
               alt='Expertise'
-              fill
+              width={500} // Adjust width as needed
               className='rounded-lg'
             />
           </motion.div>
         </div>
 
-        <div className='border border-white/20 rounded-lg p-6'>
+        <div className=' rounded-lg p-6'>
           <motion.h3
             className='font-bold text-2xl mb-2'
             initial={{ scale: 0.5 }}
@@ -194,7 +194,7 @@ export default function About() {
       </div>
 
       <div className='grid md:grid-cols-2 gap-8 mt-8'>
-        <div className='border border-white/20 rounded-lg p-6'>
+        <div className=' rounded-lg p-6'>
           <motion.h3
             className='font-bold text-2xl mb-2'
             initial={{ scale: 0.5 }}
@@ -339,7 +339,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className=' border border-white/20 rounded-lg p-6'>
+        <div className='  rounded-lg p-6'>
           <div>
             <motion.h3
               className='font-bold text-2xl mb-2'
@@ -370,13 +370,14 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 1 + 0 * 0.1, duration: 0.4 }}
-            className='h-[200px] overflow-hidden p-4 border border-white/20 relative'
+            className='h-auto  relative'
           >
             <Image
               src={goals}
               alt='Goals'
-              fill
-              className='object-cover rounded-lg'
+              width={500} // Adjust width as needed
+              height={700} // Adjust height as needed
+              className='object-contain rounded-lg'
             />
           </motion.div>
         </div>
