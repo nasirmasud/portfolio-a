@@ -18,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={dmSans.className}>{children}</body>
+    <html lang='en' className='scroll-smooth'>
+      <body className={`${dmSans.className} overflow-x-hidden min-h-screen`}>
+        <div className='relative w-full'>{children}</div>
+      </body>
     </html>
   );
 }

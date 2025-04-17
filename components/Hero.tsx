@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <div
       id='home'
-      className='relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,#000,#340f41_35%,#8a3da4_55%,#8993ed_85%)]'
+      className='relative overflow-hidden min-h-screen w-full text-white bg-[linear-gradient(to_bottom,#000,#340f41_35%,#8a3da4_55%,#8993ed_85%)]'
     >
       <div className='absolute bg-black w-[1800px] h-[1200px] rounded-[50%] left-1/2 -translate-x-1/2 bg-[radial-gradient(closest-side,#000_85%,#9e4ac5)] top-[250px] border-[1px] border-[#bd8cde]/30' />
       <div className='container relative mx-auto px-4 pt-12 pd-24'>
