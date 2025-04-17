@@ -4,11 +4,20 @@ import Project1 from "@/public/assets/Project01.png";
 import Project2 from "@/public/assets/Project02.png";
 import Project3 from "@/public/assets/Project03.png";
 import Project4 from "@/public/assets/Project04.png";
+import Project5 from "@/public/assets/Project05.png";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
 
 const projects = [
+  {
+    id: 5,
+    year: "2024",
+    title: "Next Ecommerce - Shopping made easy",
+    description:
+      "A modern, full-stack e-commerce platform built with Next.js 14, featuring server actions and server components. Includes user authentication, product management, shopping cart, secure payments via Stripe/PayPal, and order tracking. Uses Prisma with PostgreSQL for data, and integrates Resend for transactional emails. Features a responsive UI with Tailwind CSS, dark mode support, and admin dashboard for inventory and user management. Implements role-based access control and secure checkout flow. Perfect for small to medium online stores seeking a scalable, performant solution.",
+    imageSrc: Project5,
+  },
   {
     id: 1,
     year: "2023",
