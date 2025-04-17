@@ -45,17 +45,17 @@ export default function Footer() {
 
   return (
     <footer className='relative py-8 w-full mx-auto px-4 overflow-hidden'>
-      {/* Mobile background elements - 40px left */}
+      {/* Mobile background elements - left */}
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
-        <div className='absolute top-[30%] left-[calc(33.33%-40px)] w-[100px] h-[100px] bg-purple-500 rounded-full opacity-40 -translate-x-1/2 -translate-y-1/2'></div>
-        <div className='absolute top-[50%] left-[calc(25%-40px)] w-[500px] h-[110px] bg-blue-400 rounded-lg opacity-30 -translate-x-1/2 -translate-y-1/2'></div>
+        <div className='absolute top-[30%] left-[calc(33.33%)] w-[100px] h-[100px] bg-purple-500 rounded-full opacity-40 -translate-x-1/2 -translate-y-1/2'></div>
+        <div className='absolute top-[50%] left-[calc(25%)] w-[500px] h-[110px] bg-blue-400 rounded-lg opacity-30 -translate-x-1/2 -translate-y-1/2'></div>
       </div>
 
-      {/* Desktop background elements - 40px left */}
+      {/* Desktop background elements - left */}
       <div className='md-block absolute inset-0 overflow-hidden pointer-events-none'>
-        <div className='absolute top-[30%] left-[calc(33.33%-40px)] w-[200px] h-[200px] bg-blue-300 rounded-full opacity-40 -translate-x-1/2 -translate-y-1/2'></div>
-        <div className='absolute top-[40%] left-[calc(50%-40px)] w-[180px] h-[220px] bg-amber-400 rounded-lg opacity-20 -translate-x-1/2 -translate-y-1/2'></div>
-        <div className='absolute top-[45%] left-[calc(75%-40px)] w-[500px] h-[150px] bg-purple-400 rounded-lg opacity-30 -translate-x-1/2 -translate-y-1/2'></div>
+        <div className='absolute top-[30%] left-[calc(33.33%)] w-[200px] h-[200px] bg-blue-300 rounded-full opacity-40 -translate-x-1/2 -translate-y-1/2'></div>
+        <div className='absolute top-[40%] left-[calc(50%)] w-[180px] h-[220px] bg-amber-400 rounded-lg opacity-20 -translate-x-1/2 -translate-y-1/2'></div>
+        <div className='absolute top-[45%] left-[calc(75%)] w-[500px] h-[150px] bg-purple-400 rounded-lg opacity-30 -translate-x-1/2 -translate-y-1/2'></div>
       </div>
 
       {/* Centered text container */}
