@@ -11,19 +11,19 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    year: "2021",
-    title: "Its Nasir - A personal portfolio",
-    description:
-      "A modern personal portfolio built with Next.js 15 and React 19, featuring a sleek UI powered by Tailwind CSS and ShadCN components. The project leverages Framer Motion for smooth animations and transitions, with responsive design at its core. It includes intersection observers for scroll-based animations and uses TypeScript for type safety. The portfolio showcases professional work through an optimized, component-based architecture with built-in performance features like font optimization and modern development practices.",
-    imageSrc: Project1,
-  },
-  {
-    id: 2,
     year: "2023",
     title: "NextProperties - Find the Perfect Property for You",
     description:
       "Next-Properties is a real estate platform built with Next.js, offering property listings, search functionality, and user management. The app features interactive property cards, detailed property views, and a responsive design. Users can browse listings, filter by various criteria (price, location, type), and save favorites. The backend integrates with a database MongoDB for property data and user management. The UI is built with modern React components and styled using Tailwind CSS.",
     imageSrc: Project2,
+  },
+  {
+    id: 2,
+    year: "2021",
+    title: "Its Nasir - A personal portfolio",
+    description:
+      "A modern personal portfolio built with Next.js 15 and React 19, featuring a sleek UI powered by Tailwind CSS and ShadCN components. The project leverages Framer Motion for smooth animations and transitions, with responsive design at its core. It includes intersection observers for scroll-based animations and uses TypeScript for type safety. The portfolio showcases professional work through an optimized, component-based architecture with built-in performance features like font optimization and modern development practices.",
+    imageSrc: Project1,
   },
   {
     id: 3,
